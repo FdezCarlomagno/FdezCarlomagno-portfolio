@@ -1,0 +1,41 @@
+.project-description {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+.project-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-details .project-links {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.project-description, .project-details h2 {
+    text-align: left;
+}
+
+.project-description img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.project-details-info h3 {
+    color: #1e90ff;
+}
+
+@media (max-width: 768px) {
+    .project-details {
+        overflow-x: hidden;
+    }
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
