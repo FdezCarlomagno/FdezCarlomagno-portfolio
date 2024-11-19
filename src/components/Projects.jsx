@@ -16,6 +16,8 @@ import tailwindLogo from '../assets/tailwind.svg';
 import bootstrapLogo from '../assets/bootstrap.svg';
 import mySQLlogo from '../assets/mySQL.svg';
 import thunderclientLogo from '../assets/thunderclient.svg';
+import nodejs from '../assets/nodejs.svg';
+import express from '../assets/express.svg';
 
 const logos = {
     "React.js": reactLogo,
@@ -27,7 +29,9 @@ const logos = {
     "Tailwind CSS": tailwindLogo,
     "Bootstrap": bootstrapLogo,
     "MySQL": mySQLlogo,
-    "Thunderclient": thunderclientLogo
+    "Thunderclient": thunderclientLogo,
+    "Node.js": nodejs,
+    "Express.js": express
 };
 
 const Card = ({ project }) => {

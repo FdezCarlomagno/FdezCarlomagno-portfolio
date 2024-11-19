@@ -14,6 +14,7 @@ import tailwindLogo from './assets/tailwind.svg';
 import video3 from './assets/bg5.mp4';
 import Contact from './components/Contact.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import nodejsLogo from './assets/nodejs.svg';
 
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
@@ -37,13 +38,13 @@ function App() {
   const logos = [
     { src: reactLogo, alt: 'React' },
     { src: viteLogo, alt: 'JavaScript' },
+    { src: nodejsLogo, alt: 'Node.js'},
     { src: phpLogo, alt: 'PHP' },
-    { src: htmlLogo, alt: 'HTML' },
     { src: cssLogo, alt: 'CSS' },
     { src: gitLogo, alt: 'Git' },
     { src: mySQLlogo, alt: 'mySQL' },
     { src: JavaLogo, alt: 'Java' },
-    { src: tailwindLogo, alt: 'Tailwind' }
+    { src: tailwindLogo, alt: 'Tailwind' },
   ];
 
   return (
