@@ -2,52 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './backendProjects.css';
+import backendProjects from '../components/objects/BackendProjects.jsx';
 
 const BackendProjects = ({ logos }) => {
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.2,
+        threshold: 0.1,
     });
-
-    const backendProjects = [
-        {
-            id: 4,
-            name: 'Guitars API 🎸',
-            description: `This project provides a RESTful API to manage guitars and categories in a database. The API allows CRUD operations on guitar and category resources, as well as obtaining a user token.`,
-            img: '',
-            repo: 'https://github.com/FdezCarlomagno/tp_web2_apiRest.git',
-            live: false,
-            technologies: 'PHP, MySQL, Thunderclient',
-            apiDetails: [
-                { route: '/guitarras', method: 'GET', description: 'Retrieves the list of all guitars' },
-                { route: '/guitarras/:categoria', method: 'GET', description: 'Retrieves all guitars of a specific category' },
-                { route: '/guitarras/guitarra/:id', method: 'GET', description: 'Retrieves a specific guitar by its id' },
-                { route: '/guitarras', method: 'POST', description: 'Adds a new guitar to the collection' },
-                { route: '/guitarras/guitarra/:id', method: 'PUT', description: 'Updates a specific guitar' },
-                { route: '/guitarras/guitarra/:id', method: 'DELETE', description: 'Deletes a specific guitar' },
-                { route: '/categorias', method: 'GET', description: 'Retrieves the list of all guitar categories' },
-                { route: '/user/token', method: 'GET', description: 'Generates and returns an authentication token for the user' },
-            ]
-        },
-        {
-            id: 5,
-            name: 'Painting Management API 🎨',
-            description: `This project is a Painting Management API built using Node.js, Express.js and MySQL. The API provides endpoints to manage paintings, including user authentication with JWT. It supports CRUD operations for paintings, user authentication, and query-based filtering for fetching data.`,
-            img: '',
-            repo: 'https://github.com/FdezCarlomagno/Node.js-API.git',
-            live: false,
-            technologies: 'Node.js, Express.js, MySQL, Thunderclient',
-            apiDetails: [
-                { route: '/api/paintings', method: 'GET', description: 'Retrieves the list of all paintings with optional filtering (sold, price, name)' },
-                { route: '/api/paintings/:id', method: 'GET', description: 'Retrieves details of a specific painting by its ID' },
-                { route: '/api/paintings', method: 'POST', description: 'Adds a new painting to the collection (authentication required)' },
-                { route: '/api/paintings/:id', method: 'PUT', description: 'Updates a specific painting (authentication required)' },
-                { route: '/api/paintings/:id', method: 'DELETE', description: 'Deletes a specific painting (authentication required)' },
-                { route: '/api/users/token', method: 'POST', description: 'Generates and returns a JWT for authentication' },
-            ]
-        }
-    ];
-
 
     return (
         <motion.section
