@@ -13,7 +13,7 @@ const BackendProjects = ({ logos }) => {
         {
             id: 4,
             name: 'Guitars API 🎸',
-            description: `This project provides a RESTful API to manage guitars and categories in a database. The API allows CRUD operations on guitar and category resources, as well as obtaining a user token.`,
+            description: `This project provides a RESTful API to manage guitars and categories in a database. The API allows CRUD operations on guitar and category resources, as well as obtaining a user token. Used PHP, MySQL and Thunderclient`,
             img: '',
             repo: 'https://github.com/FdezCarlomagno/tp_web2_apiRest.git',
             live: false,
@@ -32,7 +32,7 @@ const BackendProjects = ({ logos }) => {
         {
             id: 5,
             name: 'Painting Management API 🎨',
-            description: `This project is a Painting Management API built using Node.js, Express.js and MySQL. The API provides endpoints to manage paintings, including user authentication with JWT. It supports CRUD operations for paintings, user authentication, and query-based filtering for fetching data.`,
+            description: `This project is a Painting Management API built using Node.js, Express.js and MySQL. The API provides endpoints to manage paintings, including user authentication with JWT. It supports CRUD operations for paintings, user authentication, and query-based filtering for fetching data. Used Node.js, Express.js, MySQL, Thunderclient`,
             img: '',
             repo: 'https://github.com/FdezCarlomagno/Node.js-API.git',
             live: false,
@@ -45,7 +45,37 @@ const BackendProjects = ({ logos }) => {
                 { route: '/api/paintings/:id', method: 'DELETE', description: 'Deletes a specific painting (authentication required)' },
                 { route: '/api/users/token', method: 'POST', description: 'Generates and returns a JWT for authentication' },
             ]
+        },
+        {
+            id: 6,
+            name: "E-Commerce Backend",
+            description: "This project is a comprehensive backend implementation for an e-commerce platform. It mimics the functionality of a real-world e-commerce system, providing user authentication, role-based access control, product management, cart management, and more. Used Node.js, Express.js, MySQL and for unitary testing used Supertest and Jest.",
+            img: "",
+            repo: "https://github.com/FdezCarlomagno/e-commerce-API-demo",
+            live: false,
+            technologies: "Node.js, Express.js, MySQL, Thunderclient",
+            apiDetails: [
+                { route: "/users/token", method: "POST", description: "Retrieves a JWT token for user authentication (login)." },
+                { route: "/users/register", method: "POST", description: "Registers a new user and stores their information in the database." },
+                { route: "/users/profile", method: "GET", description: "Retrieves the logged-in user's profile information." },
+                { route: "/users/profile", method: "PUT", description: "Allows the logged-in user to update their profile information (nickname or email)." },
+                { route: "/users/profile", method: "DELETE", description: "Allows the logged-in user to delete their own account." },
+                { route: "/users", method: "GET", description: "Retrieves a list of all users in the database (admin-only)." },
+                { route: "/users/promote/:userId", method: "PUT", description: "Promotes a regular user to admin (admin-only)." },
+                { route: "/users/:userId", method: "GET", description: "Retrieves information about a specific user by their ID (admin-only)." },
+                { route: "/products", method: "GET", description: "Retrieves all products in the database." },
+                { route: "/products/:product_id", method: "GET", description: "Retrieves details about a single product by its ID." },
+                { route: "/products", method: "POST", description: "Allows an admin to add a new product to the database (admin-only)." },
+                { route: "/products/:product_id", method: "DELETE", description: "Allows an admin to delete a product by its ID (admin-only)." },
+                { route: "/products/:product_id", method: "PUT", description: "Allows an admin to update the details of an existing product (admin-only)." },
+                { route: "/cart", method: "GET", description: "Retrieves the authenticated user's active cart, if one exists." },
+                { route: "/cart/addToCart", method: "POST", description: "Adds a product to the user's cart. Creates a new cart if one doesn’t already exist." },
+                { route: "/cart/products", method: "GET", description: "Retrieves all the products in the user's active cart." },
+                { route: "/cart/products", method: "PUT", description: "Updates the quantity of a specific product in the user's cart." },
+                { route: "/cart/products", method: "DELETE", description: "Removes a specific product from the user's cart." }
+            ]
         }
+
     ];
 
 

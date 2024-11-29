@@ -1,4 +1,7 @@
 .backend-projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 50px;
     text-align: center;
 }
@@ -10,7 +13,7 @@
 
 .backend-project-card {
     border-radius: 8px;
-    background-color: #222;
+    background-color: #22222285;
     margin: 20px auto;
     padding: 20px;
     display: flex;
@@ -24,7 +27,7 @@
 .backend-project-info {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: flex-start;
     text-align: left;
 }
