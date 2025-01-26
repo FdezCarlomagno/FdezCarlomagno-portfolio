@@ -13,6 +13,7 @@ import tailwindLogo from '../assets/tailwind.svg';
 import bootstrapLogo from '../assets/bootstrap.svg';
 import mySQLlogo from '../assets/mySQL.svg';
 import thunderclientLogo from '../assets/thunderclient.svg';
+import typescriptLogo from '../assets/Typescript.svg'
 
 const logos = {
     "React.js": reactLogo,
@@ -24,7 +25,8 @@ const logos = {
     "Tailwind CSS": tailwindLogo,
     "Bootstrap": bootstrapLogo,
     "MySQL": mySQLlogo,
-    "Thunderclient": thunderclientLogo
+    "Thunderclient": thunderclientLogo,
+    "Typescript": typescriptLogo
 };
 const ProjectDetails = ({ projects }) => {
     const { id } = useParams(); // Extraer el parámetro "id" de la URL

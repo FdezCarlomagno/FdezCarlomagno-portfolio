@@ -43,13 +43,13 @@ const About = () => {
                     viewport={{ once: true }}
                 >
                     <p>
-                        I am a <strong>trainee programmer</strong> with a strong desire to learn and adapt to the needs of the business environment.
+                        I am a <strong>junior programmer</strong> with a strong desire to learn and adapt to the needs of the business environment.
                     </p>
                     <p>
                         I consider myself an efficient, creative, and productive person, always focused on problem-solving and continuous improvement.
                     </p>
                     <p>
-                        I have knowledge of languages such as Java, JavaScript, PHP and mySQL as well as experience with frameworks like React, Bootstrap and Tailwind.
+                        I have knowledge of languages such as TypeScript/JavaScript and PHP. Databases such as mySQL as well as experience with frameworks like React, Node.js, Express.js, Bootstrap and Tailwind.
                     </p>
                     <p>
                         I am seeking opportunities that will allow me to grow in the software development field and contribute to the success of innovative projects.

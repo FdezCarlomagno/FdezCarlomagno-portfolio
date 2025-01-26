@@ -15,6 +15,7 @@ import video3 from './assets/bg5.mp4';
 import Contact from './components/Contact.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import nodejsLogo from './assets/nodejs.svg';
+import typescriptLogo from './assets/Typescript.svg'
 
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
@@ -37,13 +38,14 @@ function App() {
 
   const logos = [
     { src: reactLogo, alt: 'React' },
-    { src: viteLogo, alt: 'JavaScript' },
+    { src: viteLogo, alt: 'Javascript' },
+    { src: typescriptLogo, alt: 'Typescript' },
     { src: nodejsLogo, alt: 'Node.js'},
     { src: phpLogo, alt: 'PHP' },
     { src: cssLogo, alt: 'CSS' },
     { src: gitLogo, alt: 'Git' },
     { src: mySQLlogo, alt: 'mySQL' },
-    { src: JavaLogo, alt: 'Java' },
+  
     { src: tailwindLogo, alt: 'Tailwind' },
   ];
 

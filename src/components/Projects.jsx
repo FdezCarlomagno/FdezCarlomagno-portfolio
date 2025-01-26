@@ -18,6 +18,7 @@ import mySQLlogo from '../assets/mySQL.svg';
 import thunderclientLogo from '../assets/thunderclient.svg';
 import nodejs from '../assets/nodejs.svg';
 import express from '../assets/express.svg';
+import typescriptLogo from '../assets/Typescript.svg'
 
 const logos = {
     "React.js": reactLogo,
@@ -31,7 +32,8 @@ const logos = {
     "MySQL": mySQLlogo,
     "Thunderclient": thunderclientLogo,
     "Node.js": nodejs,
-    "Express.js": express
+    "Express.js": express,
+    "Typescript": typescriptLogo
 };
 
 const Card = ({ project }) => {
